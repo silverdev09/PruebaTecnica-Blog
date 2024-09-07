@@ -11,3 +11,5 @@ Para implementar solucion de la prueba tecnica, la estrategia que se utilizó pa
 4. blog.serv: Aqui se encuentra el nexo o la interface entre los APIs y la implementacion.
 
 La clase que expone los APIs Rest se denomina BlogService.java, mismo se encuentra en el paquete blog desde el cual se realiza las solicitudes HTTP utiizando el componente WebServlet para ejecutar en el servidor de una web. 
+
+La documentación de las APIs se encuentra en este mismo proyecto PruebaTecnica-Blog\documentacion api\Documentacion de APIs de Blogs.docx
