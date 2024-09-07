@@ -7,6 +7,8 @@ import pruebatecnica.blog.serv.BlogServ;
 
 import javax.ejb.EJB;
 import javax.persistence.PersistenceException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletResponse;
 import javax.ws.rs.*;
 import javax.ws.rs.core.Context;
@@ -17,10 +19,10 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-@Path("/blogService")
+@WebServlet("/blogServicio")
 @Consumes(MediaType.APPLICATION_JSON)
 @Produces(MediaType.APPLICATION_JSON)
-public class BlogService {
+public class BlogService extends HttpServlet {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(BlogService.class);
 
